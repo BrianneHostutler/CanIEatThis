@@ -5,13 +5,16 @@
   background-color: gray;
 }
 body{
-    background: url('http://image.shutterstock.com/z/stock-photo-organic-food-background-high-resolution-product-studio-photo-of-different-vegetables-on-wooden-330712538.jpg') no-repeat fixed;
+    background: url('http://image.shutterstock.com/z/stock-photo-organic-food-background-high-resolution-product-studio-photo-of-different-vegetables-on-wooden-330712538.jpg') no-repeat;
 
 }
 #searchTextbox{
   border: 2px gray solid;
   padding-left: 5px;
   background-color: white;
+}
+i{
+  margin-left: 200px;
 }
 form {
     width:500px;
@@ -23,4 +26,5 @@ footer{
   background-color: gray;
   padding: 20px;
   text-align: center;
+  color: white;
 }
