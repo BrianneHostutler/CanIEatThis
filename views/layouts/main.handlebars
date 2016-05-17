@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-	<!-- Main Template View -->
+<!-- Main Template View -->
+
 <head>
     <link rel="stylesheet" type="text/css" href="/css/reset.css">
     <link rel="stylesheet" type="text/css" href="/css/style.css">
@@ -15,11 +16,17 @@
     <header>
         <nav>
             <div class="nav-wrapper" id="header">
-                <a href="#" class="brand-logo" id="logo">Logo</a>
+                <a href="#" class="brand-logo" id="logo">CanIEatThis</a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="sass.html">1link</a></li>
-                    <li><a href="badges.html">link</a></li>
-                    <li><a href="collapsible.html">link3</a></li>
+                    <!-- IF USER IS LOGGED USE BELOW
+						{{#if logged_in}}
+				<li><a href="/users/sign-out">Sign Out</a></li>
+						 {{/if}} -->
+					<!-- UNLESS {{#unless logged_in}} -->
+                    <li><a href="#modal1">Login/Register</a></li>
+					<!-- END UNLESS {{/unless}} -->
+                    <li><a href="#">link</a></li>
+                    <li><a href="#">link3</a></li>
                 </ul>
             </div>
         </nav>
