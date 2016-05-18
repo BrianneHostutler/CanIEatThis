@@ -12,4 +12,8 @@ router.get('/other', function (req, res) {
     
 });
 
+router.get('/searchResults', function(req, res) {
+  res.render('searchResults');
+});
+
 module.exports = router;
