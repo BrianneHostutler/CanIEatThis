@@ -73,13 +73,13 @@ jQuery(document).ready(function($){
 	}
 
 	function signup_selected(){
-		mainNav.children('ul').removeClass('is-visible');
-		formModal.addClass('is-visible');
-		formLogin.removeClass('is-selected');
-		formSignup.addClass('is-selected');
-		formForgotPassword.removeClass('is-selected');
-		tabLogin.removeClass('selected');
-		tabSignup.addClass('selected');
+mainNav.children('ul').removeClass('is-visible');
+formModal.addClass('is-visible');
+formLogin.removeClass('is-selected');
+formSignup.addClass('is-selected');
+formForgotPassword.removeClass('is-selected');
+tabLogin.removeClass('selected');
+tabSignup.addClass('selected');
 	}
 
 	function forgot_password_selected(){
@@ -87,17 +87,6 @@ jQuery(document).ready(function($){
 		formSignup.removeClass('is-selected');
 		formForgotPassword.addClass('is-selected');
 	}
-
-	//REMOVE THIS - it's just to show error messages 
-	formLogin.find('input[type="submit"]').on('click', function(event){
-		event.preventDefault();
-		formLogin.find('input[type="email"]').toggleClass('has-error').next('span').toggleClass('is-visible');
-	});
-	formSignup.find('input[type="submit"]').on('click', function(event){
-		event.preventDefault();
-		formSignup.find('input[type="email"]').toggleClass('has-error').next('span').toggleClass('is-visible');
-	});
-
 
 	//IE9 placeholder fallback
 	//credits http://www.hagenburger.net/BLOG/HTML5-Input-Placeholder-Fix-With-jQuery.html
