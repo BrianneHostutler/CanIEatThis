@@ -7,7 +7,7 @@ var source = {
         host: 'localhost',
         user: 'root',
         password: "",
-        database: ""
+        database: "eat_this_db"
     }
 }
 

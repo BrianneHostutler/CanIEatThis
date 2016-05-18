@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/jahdasha/CanIEatThis#readme",
   "dependencies": {
+    "bcryptjs": "^2.3.0",
     "body-parser": "^1.15.1",
     "cookie-parser": "^1.4.1",
     "express": "^4.13.4",
@@ -25,7 +26,8 @@
     "express-session": "^1.13.0",
     "method-override": "^2.3.5",
     "mysql": "^2.10.2",
-    "sequelize": "^3.23.1",
+    "nodemon": "^1.9.2",
+    "sequelize": "^3.23.2",
     "serve-favicon": "^2.3.0",
     "session": "^0.1.0"
   }
