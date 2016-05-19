@@ -22,10 +22,10 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 //server routing
-var htmlRoutes = require('./routes/htmlRoutes');
+var eatRoutes = require('./routes/eatRoutes');
 var users = require('./routes/users');
 
-app.use('/', htmlRoutes);
+app.use('/', eatRoutes);
 app.use('/', users);
 
 var PORT = process.env.PORT || 3000;
@@ -33,6 +33,4 @@ app.listen(PORT, function () {
   console.log('listening on port '+ PORT + '!');
 });
 
-app.get('/searchResults', function(req, res) {
-  res.render('searchResults.handlebars');
-});
+
