@@ -1,5 +1,3 @@
-var uuid = require('node-uuid');
-
 console.log("loaded");
 
 $('#searchButton').on('click', function () {
