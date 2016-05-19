@@ -3,7 +3,7 @@ console.log("loaded");
 $('#searchButton').on('click', function () {
     var sesh;
     var createUUID = uuid.v4();
-    var appid = "x93sp3m2mrn3tuzwvd5979mx";
+    var appid = "cc9tt66g2cbgj3mhfjsy78m4";
     var results = $('#searchTextbox').val();
     var sessionURL = "http://api.foodessentials.com/createsession?uid=" + createUUID + "& devid=" + createUUID +
         "&appid=" + appid + "&f=json&v=2.00&api_key=" + appid;
