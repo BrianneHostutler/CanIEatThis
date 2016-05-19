@@ -1,31 +1,38 @@
+var uuid = require('node-uuid');
 
 console.log("loaded");
 
-    $('#searchButton').on('click', function(){
-        var results = $('#searchTextbox').val();
+$('#searchButton').on('click', function () {
+    var sesh;
+    var createUUID = uuid.v4();
+    var appid = "x93sp3m2mrn3tuzwvd5979mx";
+    var results = $('#searchTextbox').val();
+    var sessionURL = "http://api.foodessentials.com/createsession?uid=" + createUUID + "& devid=" + createUUID +
+        "&appid=" + appid + "&f=json&v=2.00&api_key=" + appid;
+    var queryURL = "https://api.foodessentials.com/label?u=" + results + "&sid=" + sesh + "&appid=" +
+        appid + "&f=json&api_key=" + appid;
+    //Write code between the dashes below to hit the queryURL with $ajax, then take the response data and display it in the div with an id of movieView
 
-        // Generate two ids in an array
-        var arr = new Array(32); // -> []
-        uuid.v1(null, arr, 0);   // -> [02 a2 ce 90 14 32 11 e1 85 58 0b 48 8e 4f c1 15]
-        // Optionally use uuid.unparse() to get stringify the ids
-        uuid.unparse(buffer);    // -> '02a2ce90-1432-11e1-8558-0b488e4fc115'
-        console.log(uuid);
+    console.log("click");
+     $.ajax({
+        url: sessionURL,
+        method: 'GET'
+    })
+        .done(function (response) {
+            console.log(response);
 
-        var queryURL = "http://api.foodessentials.com/label?u=" + results + "&sid=2bada378-a8fb-492f-b818-37eb41cee78b&appid=demoApp_01&f=json&api_key=x93sp3m2mrn3tuzwvd5979mx"
-        //Write code between the dashes below to hit the queryURL with $ajax, then take the response data and display it in the div with an id of movieView
+            sesh = JSON.stringify(response.session_id);
+            console.log(sesh);
 
-        //console.log("click");
-        $.ajax({
-          url:queryURL,
-          method: 'GET'})
-        .done(function(response){
-        console.log(response);
+        });
 
-        // var string= JSON.stringify(response);
-        // $("#searchResults").html(string);
+    $.ajax({
+        url: queryURL,
+        method: 'GET'
+    })
+        .done(function (response) {
+            console.log(response);
 
-        //or  instead of lines 31 and 32 you can do: $("#movieView").html(JSON.stringify(response))
-
-       });
-        return false;
-    });
+        });
+    return false;
+});
