@@ -18,8 +18,10 @@ $('#searchButton').on('click', function () {
             var results = $('#searchTextbox').val();
             var sessionURL = "/api.foodessentials.com/createsession?uid=" + createUUID + "& devid=" + createUUID +
                 "&appid=" + appid + "&f=json&v=2.00&api_key=" + appid;
+            console.log(sessionURL);
             var queryURL = "/api.foodessentials.com/label?u=" + results + "&sid=" + sesh + "&appid=" +
                 appid + "&f=json&api_key=" + appid;
+            console.log(queryURL);
             //Write code between the dashes below to hit the queryURL with $ajax, then take the response data and display it in the div with an id of movieView
 
             console.log("click");
