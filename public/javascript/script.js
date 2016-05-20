@@ -1,3 +1,4 @@
+
 console.log("loaded");
 
 $('#searchButton').on('click', function () {
@@ -14,7 +15,3 @@ $('#searchButton').on('click', function () {
 
   });
 });
-//    debugger;
-
-//     return false;
-// });
