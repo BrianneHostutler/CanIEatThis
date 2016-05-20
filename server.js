@@ -4,7 +4,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var session = require('express-session');
 var methodOverride = require('method-override');
-var uuid = require('node-uuid'); // required for foodessentials api "create session"
+//var uuid = require('node-uuid'); // required for foodessentials api "create session"
 
 var app = express();
 
