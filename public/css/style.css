@@ -9,36 +9,19 @@ body{
   background: url('https://pixabay.com/static/uploads/photo/2014/06/11/17/00/cook-366875_960_720.jpg');
 }
 
-#custom-search-input{
-    padding: 3px;
-    border: solid 1px #E4E4E4;
-    border-radius: 6px;
-    background-color: #fff;
+#searchTextbox{
+  width: 90%;
+  padding: 10px;
+  border-radius: 10px;
 }
-
-#custom-search-input input{
-    border: 0;
-    box-shadow: none;
-}
-
-#custom-search-input button{
-    margin: 2px 0 0 0;
-    background: none;
-    box-shadow: none;
-    border: 0;
-    color: #666666;
-    padding: 0 8px 0 10px;
-    border-left: solid 1px #ccc;
-}
-
-#custom-search-input button:hover{
-    border: 0;
-    box-shadow: none;
-    border-left: solid 1px #ccc;
-}
-
-#custom-search-input .glyphicon-search{
-    font-size: 23px;
+#searchButton{
+  padding: 7px 12px 7px 12px;
+  margin-top: 5px;
+  margin-left: 40%;
+  border-radius: 25px;
+  background-color: #2f889a;
+  color: white;
+  border: none;
 }
 
 i{
@@ -49,7 +32,7 @@ form {
     margin:50px auto;
     margin-top: 0px;
     margin-bottom: 200px;
-    padding-top: 180px;
+    padding-top: 160px;
     padding-bottom: 70px;
 }
 #searchResults{
