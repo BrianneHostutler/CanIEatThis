@@ -1,48 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <!-- Main Template View -->
 
 <head>
-
-    <link rel="stylesheet" type="text/css" href="css/reset.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" href="css/modals/modalstyle.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
     <!-- Compiled and minified CSS for Materlize-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
-    <!-- jquery- needed for materialize -->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-	<!-- Modernizr -->
-	<script src="javascript/modernizr.js"></script>
-	<!-- Compiled and minified JavaScript for Materialize-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+     <link rel="stylesheet" type="text/css" href="css/style.css"> <!-- Application CSS -->
+	<link rel="stylesheet" href="css/modals/modalstyle.css"> <!-- Modal CSS -->
     <title>Can I Eat This?</title>
 </head>
 
 <body>
     <header role="banner">
-        <a href="#" class="brand-logo" id="logo">FUCK THIS LOGO</a>
-        <nav class="main-nav">
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <nav class="main-nav holder">
+            <ul >
                 <!-- IF USER IS LOGGED USE BELOW
 						{{#if logged_in}}
-				<li><a href="/users/sign-out">Sign Out</a></li>
+				<li class="navLinks"><a href="/users/sign-out">Sign Out</a></li>
 						 {{/if}} -->
                 <!-- UNLESS {{#unless logged_in}} -->
-                <li><a class="cd-signin" href="#sign_in">Sign in</a></li>
-                <li><a class="cd-signup" href="#sign_up">Sign up</a></li>
+                <li class="navLinks"><a class="cd-signin" href="#sign_in">Sign in</a></li>
+				<!-- INSERT MORE LINKS HERE -->
+                <li class="navLinks"><a class="cd-signup" href="#sign_up">Sign up</a></li>
                 <!-- END UNLESS {{/unless}} -->
             </ul>
-            </div>
         </nav>
     </header>
-      <div id="topSection">
-    {{{ body }}}
-      </div>
-    <footer>
-        2016 Copyright Jamie Jahdasha Brianne
-    </footer>
-
-    <div class="cd-user-modal"> <!-- this is the entire modal form, including the background -->
+	<div class="cd-user-modal"> <!-- this is the entire modal form, including the background -->
 			<div class="cd-user-modal-container"> <!-- this is the container wrapper -->
 				<ul class="cd-switcher">
 					<li><a href="#0">Sign in</a></li>
@@ -122,10 +110,20 @@
 				<a href="#0" class="cd-close-form">Close</a>
 			</div> <!-- cd-user-modal-container -->
 		</div> <!-- cd-user-modal -->
+      <div id="topSection">
+    {{{ body }}}
+      </div>
+    <footer>
+        2016 Copyright Jamie Jahdasha Brianne
+    </footer>
+
+    
         
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+	 <script src="javascript/script.js"></script>
     <script src="javascript/additives.js"></script> <!-- modal javascript -->
-    <script src="javascript/script.js"></script>
+	<script src="javascript/modernizr.js"></script> 	<!-- Modernizr -->
+   
 </body>
 </HTML>
