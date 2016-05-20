@@ -16,7 +16,7 @@ $('#searchButton').on('click', function () {
 
             var appid = "x93sp3m2mrn3tuzwvd5979mx";
             var results = $('#searchTextbox').val();
-            var sessionURL = "https://api.foodessentials.com/createsession?uid=" + createUUID + "& devid=" + createUUID +
+            var sessionURL = "/api.foodessentials.com/createsession?uid=" + createUUID + "& devid=" + createUUID +
                 "&appid=" + appid + "&f=json&v=2.00&api_key=" + appid;
             var queryURL = "https://api.foodessentials.com/label?u=" + results + "&sid=" + sesh + "&appid=" +
                 appid + "&f=json&api_key=" + appid;
