@@ -1,8 +1,9 @@
 <div class="container">
 
-  <form>
-    <input type="text" id="searchTextbox" placeholder=" Search..." required><br>
+  <form method="get" action="/searchResults">
+    <input type="text" id="searchTextbox" name="upccode" placeholder=" Search..." required><br>
     <input type="button"  value="Search" id="searchButton">
+    <input type="submit" name="name" value="go">
 </form>
 
 </div>
