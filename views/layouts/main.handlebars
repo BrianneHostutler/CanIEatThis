@@ -25,11 +25,11 @@
         <nav class="main-nav holder">
             <ul>
                 <!-- If user is logged in display sign out -->
-                {{#if logged_in}}
+                {{#if checkSession.logged_in}}
                 <li class="navLinks"><a href="/users/sign-out">Sign Out</a></li>
                 {{/if}}
                 <!-- IF user is not logged in display sign in and sign out -->
-                {{#unless logged_in}}
+                {{#unless checkSession.logged_in}}
                 <li class="navLinks"><a class="cd-signin" href="#sign-in">Sign in</a></li>
                 <li class="navLinks"><a class="cd-signup" href="#sign-up">Sign up</a></li>
                 {{/unless}}
@@ -136,6 +136,8 @@
 <script src="javascript/modernizr.js"></script>
 <!-- UPC scanner javascript -->
 <script src="javascript/quagga.min.js" type="text/javascript"></script>
+<!-- UPC locator javascript -->
+<script src="javascript/live_w_locator.js" type="text/javascript"></script>
 <!-- Main app javascript -->
 <script src="javascript/script.js"></script>
 </body>
