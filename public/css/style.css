@@ -48,9 +48,10 @@ footer{
   padding: 30px;
   text-align: center;
   color: white;
+  margin-top: 10px;
   position: absolute;
     left: 0;
-    bottom: 0;
-    height: 5%;
+    bottom: -1;
+    height: 1%;
     width: 100%;
 }
