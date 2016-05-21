@@ -24,13 +24,9 @@ console.log(upc);
 
       res.render('searchResults', {Sample_Test: body});
 
-      // res.send(body);
       // console.log(body);
     }
   })
-
-  // res.render('searchResults');
-  // console.log(res);
 });
 
 router.get('/upc/:upccode', function(req, res, next) {
