@@ -42,16 +42,15 @@ form {
 #searchSection{
     background: white;
     margin-top: 20px;
+    margin-bottom: 30px;
 }
+
 footer{
+  height: 50px;
   background-color: #343642;
   padding: 30px;
   text-align: center;
   color: white;
-  margin-top: 10px;
-  position: absolute;
-    left: 0;
-    bottom: -1;
-    height: 1%;
-    width: 100%;
+  margin-top: -15px;
+  width: 100%;
 }
