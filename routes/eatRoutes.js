@@ -13,19 +13,14 @@ router.get('/', function (req, res) {
 
 router.get('/searchResults', function(req, res) {
 
-
 var upc = req.query.upccode
 console.log(upc);
   request('http://api.foodessentials.com/label?sid=3f0b67c7-a3b6-4fb8-a5e0-a60807e4d936&n=10&appid=x93sp3m2mrn3tuzwvd5979mx&f=json&api_key=x93sp3m2mrn3tuzwvd5979mx&u='+upc, function (error, response, body) {
     if (!error && response.statusCode == 200) {
-
       res.render('searchResults', {search: JSON.parse(body)});
-
       // console.log(body);
     }
   })
-
-
 });
 
   router.get('/upc/:upccode', function(req, res, next) {
@@ -34,12 +29,9 @@ console.log(upc);
   request('http://api.foodessentials.com/label?sid=3f0b67c7-a3b6-4fb8-a5e0-a60807e4d936&n=10&appid=x93sp3m2mrn3tuzwvd5979mx&f=json&api_key=x93sp3m2mrn3tuzwvd5979mx&u='+req.params.upccode, function (error, response, body) {
     if (!error && response.statusCode == 200) {
       res.send(body);
-
       console.log(body);
-
     }
   })
-
 });
 
 

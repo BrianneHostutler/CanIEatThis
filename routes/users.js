@@ -6,17 +6,10 @@ var path = require('path');
 var User = require('../models/models.js');
 
 //this is the users_controller.js file
-router.get('/users/new', function(req,res) {
-	res.render('users/_newUser');
-});
-
-router.get('/users/sign-in', function(req,res) {
-	res.render('users/_signIn');
-});
 
 router.get('/users/sign-out', function(req,res) {
   req.session.destroy(function(err) {
-     res.redirect('/')
+     res.redirect('/');
   })
 });
 
@@ -42,7 +35,6 @@ router.post('/users/login', function(req, res) {
 
 //to do: check if the username/email exist - if they do then redirect the user back to the signup page and say sorry you need to choose a new name
 router.post('/users/create', function(req,res) {
-  console.log(res)
   bcrypt.genSalt(10, function(err, salt) {
       bcrypt.hash(req.body.password, salt, function(err, hash) {
         User.create({
@@ -50,12 +42,12 @@ router.post('/users/create', function(req,res) {
           email: req.body.email,
           password_hash: hash
         }).then(function(user){
-          console.log("hello create");
+          console.log("hello create", user.username);
           req.session.logged_in = true;
           req.session.user_id = user.id;
           req.session.user_email = user.email;
           req.session.username = user.username;
-          res.redirect('/')
+          res.redirect('/');
         });
       });
   });
