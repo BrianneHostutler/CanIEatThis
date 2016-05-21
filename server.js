@@ -29,6 +29,14 @@ var users = require('./routes/users');
 app.use('/', eatRoutes);
 app.use('/', users);
 
+// if(searched=true){
+//   res.redirect('/searchResults');
+// };
+// else{
+//   res.send("Error!");
+// }
+
+
 var PORT = process.env.PORT || 3000;
 app.listen(PORT, function () {
   console.log('listening on port '+ PORT + '!');
