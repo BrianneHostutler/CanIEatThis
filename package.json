@@ -28,6 +28,7 @@
     "mysql": "^2.10.2",
     "node-uuid": "^1.4.7",
     "nodemon": "^1.9.2",
+    "quagga": "^0.11.0",
     "sequelize": "^3.23.2",
     "serve-favicon": "^2.3.0",
     "session": "^0.1.0"
