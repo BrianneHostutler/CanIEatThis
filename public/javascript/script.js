@@ -13,6 +13,5 @@ $('#searchButton').on('click', function () {
   .done(function (response) {
       console.log(response);
       $("#searchResults").html(response);
-
   });
 });
