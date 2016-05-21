@@ -1,6 +1,10 @@
 #logo{
-  margin-left: 20px;
-  margin-top: 20px;
+  color: white;
+  float: left;
+  font-size: 22pt;
+  margin-top: 17px;
+  margin-left: 10px;
+  font-family: "PT Sans", sans-serif;
 }
 #header{
   background-color: gray;
@@ -35,12 +39,13 @@ form {
     padding-top: 160px;
     padding-bottom: 70px;
 }
-#searchResults{
+#searchSection{
     background: white;
+    margin-top: 20px;
 }
 footer{
   background-color: #343642;
-  padding: 20px;
+  padding: 30px;
   text-align: center;
   color: white;
   position: absolute;
