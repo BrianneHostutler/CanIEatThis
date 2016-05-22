@@ -11,8 +11,11 @@
 }
 body{
   background: url('https://pixabay.com/static/uploads/photo/2014/06/11/17/00/cook-366875_960_720.jpg');
+  background-size: 100%;
 }
-
+button{
+  text-decoration: none;
+}
 #searchTextbox{
   width: 90%;
   padding: 10px;
@@ -27,7 +30,6 @@ body{
   color: white;
   border: none;
 }
-
 i{
   margin-left: 200px;
 }
@@ -41,10 +43,19 @@ form {
 }
 #searchSection{
     background: white;
-    margin-top: 20px;
-    margin-bottom: 30px;
+    margin: 50px;
+    border: black 2px solid;
+
 }
 
+.listItems{
+  padding-left: 10px;
+}
+#searchAgain{
+  text-align: center;
+  padding: 40px;
+
+}
 footer{
   height: 50px;
   background-color: #343642;

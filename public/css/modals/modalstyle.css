@@ -1,7 +1,5 @@
 /* --------------------------------
-
 Primary style
-
 -------------------------------- */
 html * {
   -webkit-font-smoothing: antialiased;
@@ -40,9 +38,7 @@ input::-ms-clear, textarea::-ms-clear {
 }
 
 /* --------------------------------
-
 Main components
-
 -------------------------------- */
 header[role=banner] {
   position: relative;
@@ -163,6 +159,7 @@ header[role=banner]::after {
     padding: .6em 1em;
     border: 1px solid rgba(255, 255, 255, 0.6);
     border-radius: 50em;
+    text-decoration: none;
   }
   .main-nav a.cd-signup {
     background: #2f889a;
@@ -171,9 +168,7 @@ header[role=banner]::after {
 }
 
 /* --------------------------------
-
 xsigin/signup popup
-
 -------------------------------- */
 .cd-user-modal {
   position: fixed;

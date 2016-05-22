@@ -1,13 +1,31 @@
 <!-- main section/search results -->
+	<div id="searchSection" class="container">
 
-<div class="container" id= "searchSection">
-	{{search.product_name}}
-	<ul>
-		{{#each search.allergens}}
-			<li>
-				{{allergen_name}}
-				{{allergen_value}}
-			</li>
-		{{/each}}
-	</ul>
+		<div class="page-header">
+			<h2>Results for UPC: {{search.upc}}</h2>
+		</div>
+			<h4>Name: </h4>
+			<span class="listItems">{{search.product_name}}</span>
+			<ul>
+				<h4>Allergens Present: </h4>
+				{{#each search.allergens}}
+					<li class="listItems">
+						{{#if allergen_value}}
+							{{allergen_name}}
+						{{/if}}
+					</li>
+				{{/each}}
+			</ul>
+
+			<ul>
+				<h4>Ingredients:</h4>
+				<li class="listItems">
+					{{search.ingredients}}
+				</li>
+			</ul>
+
+	<div id= "searchAgain">
+		<a href="/">Search again?</a>
+	</div>
+
 </div>
