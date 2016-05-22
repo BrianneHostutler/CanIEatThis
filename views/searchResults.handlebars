@@ -1,16 +1,13 @@
 <!-- main section/search results -->
-	<div class="container" id= "searchSection">
 
+<div class="container" id= "searchSection">
 	{{search.product_name}}
-<ul>
-	{{#each search.allergens}}
-		<li>
-			{{allergen_name}}
-			{{allergen_value}}
-
-
-
-		</li>
-	{{/each}}
-</ul>
-	</div>
+	<ul>
+		{{#each search.allergens}}
+			<li>
+				{{allergen_name}}
+				{{allergen_value}}
+			</li>
+		{{/each}}
+	</ul>
+</div>

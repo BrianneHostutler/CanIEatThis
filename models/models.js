@@ -1,3 +1,4 @@
+// Dependencies
 var Sequelize = require("sequelize");
 
 var sequelizeConnection = require("../config/connection.js");
@@ -26,5 +27,5 @@ var User = sequelizeConnection.define("users", {
 // Syncs with DB
 User.sync();
 
-// Makes the Cat Model available for other files (will also create a table)
+// Makes the User Model available for other files (will also create a table)
 module.exports = User;
