@@ -6,8 +6,8 @@ var source = {
     localhost: {
         host: 'localhost',
         user: 'root',
-        password: "",
-        database: "eat_this_db"
+        password: "o98HY^%",
+        database: ""
     }
 }
 
