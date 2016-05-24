@@ -1,4 +1,4 @@
-// Searcg button that pulls results from food essentials database
+// Search button that pulls results from food essentials database
 $('#searchButton').on('click', function () {
     // var searched=true
 
@@ -15,33 +15,10 @@ $('#searchButton').on('click', function () {
         });
 });
 
-// // --------------- Add Button "Scan Now" that makes this run on click -------------
-// // Initialize quagga (UPC) for scanning callbacks and results
-// Quagga.init({
-//     inputStream: {
-//         name: "Live",
-//         type: "LiveStream",
-//         constraints: {
-//             width: 640,
-//             height: 480,
-//             facingMode: "environment"
-//         },
-//         target: document.querySelector('#yourElement')    // Or '#yourElement' (optional)
-//     },
-//     decoder: {
-//         readers: ["UPC"]
-//     }
-// }, function (err) {
-//     if (err) {
-//         console.log(err);
-//         return
-//     }
-//     console.log("Initialization finished. Ready to start");
-//     Quagga.start();
-// });
-
-// Quagga.onDetected(function (data) {
-//     console.log(data);
-//     alert(data.codeResult.code)
-// })
+//Scan button that invokes Quagga scanner code
+$('#scanButton').on('click', function () {
+    runQuagga();
+    //populate form field once scanner picks up upc code
+    //done inside live_w_locator.js
+})
 

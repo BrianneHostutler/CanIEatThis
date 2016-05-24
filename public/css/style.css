@@ -1,67 +1,96 @@
-#logo{
-  color: white;
-  float: left;
-  font-size: 22pt;
-  margin-top: 17px;
-  margin-left: 10px;
-  font-family: "PT Sans", sans-serif;
+#logo {
+    color: white;
+    float: left;
+    font-size: 22pt;
+    margin-top: 17px;
+    margin-left: 10px;
+    font-family: "PT Sans", sans-serif;
 }
-#header{
-  background-color: gray;
+
+#header {
+    background-color: gray;
 }
-body{
-  background: url('https://pixabay.com/static/uploads/photo/2014/06/11/17/00/cook-366875_960_720.jpg');
-  background-size: 100%;
+
+body {
+    background: url('https://pixabay.com/static/uploads/photo/2014/06/11/17/00/cook-366875_960_720.jpg');
+    background-size: 100%;
 }
-button{
-  text-decoration: none;
+
+button {
+    text-decoration: none;
 }
-#searchTextbox{
-  width: 90%;
-  padding: 10px;
-  border-radius: 10px;
+
+#searchTextbox {
+    width: 90%;
+    padding: 10px;
+    border-radius: 10px;
 }
-#searchButton{
-  padding: 7px 12px 7px 12px;
-  margin-top: 5px;
-  margin-left: 40%;
-  border-radius: 25px;
-  background-color: #2f889a;
-  color: white;
-  border: none;
+
+#searchButton {
+    padding: 7px 12px 7px 12px;
+    margin-top: 5px;
+    margin-left: 40%;
+    border-radius: 25px;
+    background-color: #2f889a;
+    color: white;
+    border: none;
 }
-i{
-  margin-left: 200px;
+
+#scanButton {
+    padding: 7px 12px 7px 12px;
+    margin-top: 5px;
+    margin-left: 5px;
+    border-radius: 25px;
+    background-color: #2f889a;
+    color: white;
+    border: none;
 }
+
+#loggingOut {
+    padding: 7px 12px 7px 12px;
+    margin-top: 5px;
+    margin-left: 5px;
+    border-radius: 25px;
+    background-color: #2f889a;
+    color: white;
+    border: none;
+    text-decoration: none;
+}
+
+i {
+    margin-left: 200px;
+}
+
 form {
-    width:500px;
-    margin:50px auto;
+    width: 500px;
+    margin: 50px auto;
     margin-top: 0px;
     margin-bottom: 200px;
     padding-top: 160px;
     padding-bottom: 70px;
 }
-#searchSection{
+
+#searchSection {
     background: white;
     margin: 50px;
     border: black 2px solid;
-
 }
 
-.listItems{
-  padding-left: 10px;
+.listItems {
+    padding-left: 10px;
 }
-#searchAgain{
-  text-align: center;
-  padding: 40px;
 
+#searchAgain {
+    text-align: center;
+    padding: 40px;
 }
-footer{
-  height: 50px;
-  background-color: #343642;
-  padding: 30px;
-  text-align: center;
-  color: white;
-  margin-top: -15px;
-  width: 100%;
+
+footer {
+    height: 50px;
+    background-color: #343642;
+    padding: 30px;
+    text-align: center;
+    color: white;
+    margin-top: -15px;
+    width: 100%;
 }
