@@ -16,7 +16,9 @@ $('#searchButton').on('click', function () {
 });
 
 //Scan button that invokes Quagga scanner code
-$('#scanButton').on('click', function() {
+$('#scanButton').on('click', function () {
     runQuagga();
+    //populate form field once scanner picks up upc code
+    //done inside live_w_locator.js
 })
 

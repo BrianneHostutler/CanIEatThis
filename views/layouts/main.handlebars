@@ -28,7 +28,7 @@
             <ul>
                 <!-- If user is logged in display sign out -->
                 {{#if checkSession.logged_in}}
-                <li class="navLinks"><a href="/users/sign-out">Sign Out</a></li>
+                <li class="navLinks" ><a id="loggingOut" href="/users/sign-out">Sign Out</a></li>
                 {{/if}}
                 <!-- IF user is not logged in display sign in and sign out -->
                 {{#unless checkSession.logged_in}}
