@@ -1,5 +1,5 @@
 function runQuagga() {
-    
+
         var resultCollector = Quagga.ResultCollector.create({
             capture: true,
             capacity: 20,
@@ -18,7 +18,7 @@ function runQuagga() {
                     if (err) {
                         return self.handleError(err);
                     }
-                    Quagga.registerResultCollector(resultCollector);   
+                    Quagga.registerResultCollector(resultCollector);
                     Quagga.start();
                 });
             },
@@ -101,10 +101,10 @@ function runQuagga() {
                     patchSize: "medium",
                     halfSample: true
                 },
-                numOfWorkers: 4,
+                numOfWorkers: 8,
                 decoder: {
                     readers: [{
-                        format: "code_128_reader",
+                        format: "upc_reader",
                         config: {}
                     }]
                 },
@@ -145,7 +145,7 @@ function runQuagga() {
             if (App.lastResult !== code) {
                 App.lastResult = code;
                 var $node = null, canvas = Quagga.canvas.dom.image;
-                
+
                 $('#searchTextbox').val('');
                 $('#searchTextbox').val(code);
 
