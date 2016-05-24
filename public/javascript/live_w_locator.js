@@ -18,8 +18,7 @@ function runQuagga() {
                     if (err) {
                         return self.handleError(err);
                     }
-                    Quagga.registerResultCollector(resultCollector);
-                    App.attachListeners();
+                    Quagga.registerResultCollector(resultCollector);   
                     Quagga.start();
                 });
             },
@@ -147,6 +146,7 @@ function runQuagga() {
                 App.lastResult = code;
                 var $node = null, canvas = Quagga.canvas.dom.image;
                 
+                $('#searchTextbox').val('');
                 $('#searchTextbox').val(code);
 
                 // $node = $('<li><div class="thumbnail"><div class="imgWrapper"><img /></div><div class="caption"><h4 class="code"></h4></div></div></li>');
