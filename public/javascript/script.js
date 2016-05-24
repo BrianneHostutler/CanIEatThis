@@ -17,31 +17,31 @@ $('#searchButton').on('click', function () {
 
 // // --------------- Add Button "Scan Now" that makes this run on click -------------
 // // Initialize quagga (UPC) for scanning callbacks and results
-// Quagga.init({
-//     inputStream: {
-//         name: "Live",
-//         type: "LiveStream",
-//         constraints: {
-//             width: 640,
-//             height: 480,
-//             facingMode: "environment"
-//         },
-//         target: document.querySelector('#yourElement')    // Or '#yourElement' (optional)
-//     },
-//     decoder: {
-//         readers: ["UPC"]
-//     }
-// }, function (err) {
-//     if (err) {
-//         console.log(err);
-//         return
-//     }
-//     console.log("Initialization finished. Ready to start");
-//     Quagga.start();
-// });
+Quagga.init({
+    inputStream: {
+        name: "Live",
+        type: "LiveStream",
+        constraints: {
+            width: 640,
+            height: 480,
+            facingMode: "environment"
+        },
+        target: document.querySelector('#yourElement')    // Or '#yourElement' (optional)
+    },
+    decoder: {
+        readers: ["UPC"]
+    }
+}, function (err) {
+    if (err) {
+        console.log(err);
+        return
+    }
+    console.log("Initialization finished. Ready to start");
+    Quagga.start();
+});
 
-// Quagga.onDetected(function (data) {
-//     console.log(data);
-//     alert(data.codeResult.code)
-// })
+Quagga.onDetected(function (data) {
+    console.log(data);
+    alert(data.codeResult.code)
+})
 
