@@ -30,6 +30,15 @@ button{
   color: white;
   border: none;
 }
+#scanButton {
+  padding: 7px 12px 7px 12px;
+  margin-top: 5px;
+  margin-left:5px;
+  border-radius: 25px;
+  background-color: #2f889a;
+  color: white;
+  border: none;
+}
 i{
   margin-left: 200px;
 }
