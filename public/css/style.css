@@ -29,13 +29,12 @@ button {
 #searchButton {
     padding: 7px 12px 7px 12px;
     margin-top: 5px;
-    margin-left: 40%;
+    margin-left: 29%;
     border-radius: 25px;
     background-color: #2f889a;
     color: white;
     border: none;
 }
-
 #scanButton {
     padding: 7px 12px 7px 12px;
     margin-top: 5px;
@@ -44,6 +43,12 @@ button {
     background-color: #2f889a;
     color: white;
     border: none;
+}
+#scanButton:hover{
+  color:rgb(52, 54, 66);
+}
+#searchButton:hover{
+  color:rgb(52, 54, 66);
 }
 
 #loggingOut {
@@ -93,4 +98,10 @@ footer {
     color: white;
     margin-top: -15px;
     width: 100%;
+}
+
+@media (max-width: 768px){
+    #logo{
+      margin-top: 0px;
+    }
 }
