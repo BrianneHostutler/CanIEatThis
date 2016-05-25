@@ -52,7 +52,6 @@ function runQuagga() {
                 self._accessByPath(self.state, path, value);
 
                 console.log(JSON.stringify(self.state));
-                App.detachListeners();
                 Quagga.stop();
                 App.init();
             },
@@ -92,19 +91,19 @@ function runQuagga() {
                 inputStream: {
                     type: "LiveStream",
                     constraints: {
-                        width: 640,
-                        height: 480,
+                        width: 400,
+                        height: 320,
                         facingMode: "environment"
                     }
                 },
                 locator: {
                     patchSize: "medium",
-                    halfSample: true
+                    halfSample: false
                 },
                 numOfWorkers: 4,
                 decoder: {
                     readers: [{
-                        format: "code_128_reader",
+                        format: "upc_reader",
                         config: {}
                     }]
                 },
@@ -141,18 +140,13 @@ function runQuagga() {
 
         Quagga.onDetected(function (result) {
             var code = result.codeResult.code;
-
+            
             if (App.lastResult !== code) {
                 App.lastResult = code;
-                var $node = null, canvas = Quagga.canvas.dom.image;
                 
                 $('#searchTextbox').val('');
                 $('#searchTextbox').val(code);
-
-                // $node = $('<li><div class="thumbnail"><div class="imgWrapper"><img /></div><div class="caption"><h4 class="code"></h4></div></div></li>');
-                // $node.find("img").attr("src", canvas.toDataURL());
-                // $node.find("h4.code").html(code);
-                // $("#result_strip ul.thumbnails").prepend($node);
+                Quagga.stop();
             }
         });
 }
