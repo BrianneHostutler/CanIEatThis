@@ -1,5 +1,5 @@
 function runQuagga() {
-    
+
         var resultCollector = Quagga.ResultCollector.create({
             capture: true,
             capacity: 20,
@@ -18,7 +18,7 @@ function runQuagga() {
                     if (err) {
                         return self.handleError(err);
                     }
-                    Quagga.registerResultCollector(resultCollector);   
+                    Quagga.registerResultCollector(resultCollector);
                     Quagga.start();
                 });
             },
@@ -97,10 +97,10 @@ function runQuagga() {
                     }
                 },
                 locator: {
-                    patchSize: "medium",
+                    patchSize: "large",
                     halfSample: false
                 },
-                numOfWorkers: 4,
+                numOfWorkers: 0,
                 decoder: {
                     readers: [{
                         format: "upc_reader",
