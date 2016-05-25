@@ -99,9 +99,9 @@ function runQuagga() {
                 },
                 locator: {
                     patchSize: "large",
-                    halfSample: true
+                    halfSample: false
                 },
-                numOfWorkers: 8,
+                numOfWorkers: 0,
                 decoder: {
                     readers: [{
                         format: "upc_reader",
