@@ -91,8 +91,8 @@ function runQuagga() {
                 inputStream: {
                     type: "LiveStream",
                     constraints: {
-                        width: 400,
-                        height: 320,
+                        width: 640,
+                        height: 480,
                         facingMode: "environment"
                     }
                 },
