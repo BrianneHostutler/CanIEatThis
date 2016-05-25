@@ -1,3 +1,4 @@
+
 // Search button that pulls results from food essentials database
 $('#searchButton').on('click', function () {
     // var searched=true
@@ -26,4 +27,3 @@ $('#scanButton').on('click', function () {
 $(function() {
 $.backstretch('https://pixabay.com/static/uploads/photo/2014/06/11/17/00/cook-366875_960_720.jpg');
 })
-
