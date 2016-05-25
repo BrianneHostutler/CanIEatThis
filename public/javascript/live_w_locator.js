@@ -98,7 +98,7 @@ function runQuagga() {
                     }
                 },
                 locator: {
-                    patchSize: "medium",
+                    patchSize: "large",
                     halfSample: true
                 },
                 numOfWorkers: 8,
