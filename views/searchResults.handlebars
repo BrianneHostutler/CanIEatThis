@@ -2,7 +2,7 @@
 	<div id="searchSection" class="container">
 
 		<div class="page-header">
-			<h2>Results for UPC: {{search.upc}}</h2>
+			<h2>Results for UPC: <span id="upcCodeResult">{{search.upc}}</span></h2>
 		</div>
 			<h4>Name: </h4>
 			<span class="listItems">{{search.product_name}}</span>
@@ -29,3 +29,5 @@
 	</div>
 
 </div>
+
+<script src="javascript/searchScript.js"></script>
