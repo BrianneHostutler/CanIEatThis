@@ -11,6 +11,7 @@
     background-color: gray;
 }
 
+
 /*body {
     background: url('https://pixabay.com/static/uploads/photo/2014/06/11/17/00/cook-366875_960_720.jpg');
     background-size: 100%;
@@ -35,6 +36,7 @@ button {
     color: white;
     border: none;
 }
+
 #scanButton {
     padding: 7px 12px 7px 12px;
     margin-top: 5px;
@@ -44,11 +46,13 @@ button {
     color: white;
     border: none;
 }
-#scanButton:hover{
-  color:rgb(52, 54, 66);
+
+#scanButton:hover {
+    color: rgb(52, 54, 66);
 }
-#searchButton:hover{
-  color:rgb(52, 54, 66);
+
+#searchButton:hover {
+    color: rgb(52, 54, 66);
 }
 
 #loggingOut {
@@ -76,9 +80,25 @@ form {
 }
 
 #searchSection {
-    background: white;
+    background: floralwhite;
     margin: 50px;
-    border: black 2px solid;
+    border: 3px solid white;
+    border-radius: 5px;
+}
+
+#searchSection h2 {
+    color: orange;
+    font-size:2.9rem;
+}
+
+#searchSection h4 {
+    color: orange;
+    font-size:1.8rem;
+    text-decoration: underline;
+}
+
+#upcCodeResult {
+    color: slategray;
 }
 
 .listItems {
@@ -100,8 +120,8 @@ footer {
     width: 100%;
 }
 
-@media (max-width: 768px){
-    #logo{
-      margin-top: 0px;
+@media (max-width: 768px) {
+    #logo {
+        margin-top: 0px;
     }
 }
