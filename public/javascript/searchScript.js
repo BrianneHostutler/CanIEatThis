@@ -1,3 +1,3 @@
 $(function() {
-$.backstretch('http://www.jeanniejeannie.com/wp-content/uploads/2011/08/IKEA_nationaldagsbakelser_rec_0029-700x478.jpg');
+$.backstretch('http://il9.picdn.net/shutterstock/videos/6188048/thumb/1.jpg ');
 })
