@@ -11,11 +11,6 @@
     background-color: gray;
 }
 
-
-body{
-  background-color: black;
-}
-
 button {
     text-decoration: none;
 }
@@ -31,9 +26,10 @@ button {
     margin-top: 5px;
     margin-left: 29%;
     border-radius: 25px;
-    background-color: #2f889a;
+    background-color: gray;
     color: white;
     border: none;
+
 }
 #text{
   color: white;
@@ -45,7 +41,7 @@ button {
     margin-top: 5px;
     margin-left: 5px;
     border-radius: 25px;
-    background-color: #2f889a;
+    background-color: gray;
     color: white;
     border: none;
 }
