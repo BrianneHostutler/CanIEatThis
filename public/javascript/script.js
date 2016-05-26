@@ -1,3 +1,6 @@
+ $(document).ready(function(){
+   $("#interactive").hide();
+ });
 
 // Search button that pulls results from food essentials database
 $('#searchButton').on('click', function () {
@@ -18,12 +21,13 @@ $('#searchButton').on('click', function () {
 
 //Scan button that invokes Quagga scanner code
 $('#scanButton').on('click', function () {
+    $("#interactive").show();
     runQuagga();
     //populate form field once scanner picks up upc code
     //done inside live_w_locator.js
 });
 
-//backstretch background script
+// backstretch background script
 $(function() {
-$.backstretch('https://pixabay.com/static/uploads/photo/2014/06/11/17/00/cook-366875_960_720.jpg');
+$.backstretch('http://media02.hongkiat.com/black_wallpapers/black-matter.jpg');
 })
