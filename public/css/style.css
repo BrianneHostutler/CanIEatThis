@@ -12,10 +12,9 @@
 }
 
 
-/*body {
-    background: url('https://pixabay.com/static/uploads/photo/2014/06/11/17/00/cook-366875_960_720.jpg');
-    background-size: 100%;
-}*/
+body{
+  background-color: black;
+}
 
 button {
     text-decoration: none;
@@ -36,6 +35,10 @@ button {
     color: white;
     border: none;
 }
+#text{
+  color: white;
+  font-family: "PT Sans", sans-serif;
+}
 
 #scanButton {
     padding: 7px 12px 7px 12px;
@@ -53,6 +56,11 @@ button {
 
 #searchButton:hover {
     color: rgb(52, 54, 66);
+}
+video{
+  margin-top: 50px;
+  background-color: black;
+  margin-left: -80px;
 }
 
 #loggingOut {
