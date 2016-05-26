@@ -29,5 +29,5 @@ $('#scanButton').on('click', function () {
 
 // backstretch background script
 $(function() {
-$.backstretch('http://media02.hongkiat.com/black_wallpapers/black-matter.jpg');
+$.backstretch('http://www.easyfreepatterns.com/patterns/0/black-background-wood-i-wallpaper-2560x1440-pixel-hd-769.jpg');
 })
