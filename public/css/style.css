@@ -127,6 +127,9 @@ form {
     color: white;
     border: none;
 }
+section#about{
+  margin-top: 10px;
+}
 span#appName{
   color: #fed136;
   font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
@@ -139,10 +142,7 @@ span#disclaimer{
 }
 section#aboutnav{
     padding: 0px;
-    margin-bottom: 5px;
-}
-section#about{
-  margin-top: 10px;
+
 }
 footer {
     height: 50px;
