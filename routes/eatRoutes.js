@@ -13,6 +13,12 @@ router.get('/', function (req, res) {
     res.render('index', {checkSession: req.session});
 });
 
+router.get('/aboutus', function (req, res) {
+
+  console.log(req.session )
+    res.render('aboutus');
+});
+
 router.get('/searchResults', function(req, res) {
 
 var upc = req.query.upccode;

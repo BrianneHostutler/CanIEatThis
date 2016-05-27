@@ -113,7 +113,12 @@ form {
     text-align: center;
     padding: 40px;
 }
-
+#aboutus{
+    border-radius: 25px;
+    background-color: gray;
+    color: white;
+    border: none;
+}
 footer {
     height: 50px;
     background-color: #343642;
