@@ -3,7 +3,7 @@ var express = require('express');
 var router = express.Router();
 var bcrypt = require('bcryptjs');
 var path = require('path');
-var User = require('../models/models.js');
+var User = require('../models/models.js')[0];
 
 //this is the users_controller.js file
 

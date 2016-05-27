@@ -1,9 +1,9 @@
-
 // Search button that pulls results from food essentials database
 $('#searchButton').on('click', function () {
     // var searched=true
 
     var results = $('#searchTextbox').val();
+
     var queryURL = "/upc/" + results;
 
     $.ajax({
@@ -12,6 +12,7 @@ $('#searchButton').on('click', function () {
     })
         .done(function (response) {
             console.log(response);
+
             $("#searchResults").html(response);
         });
 });
@@ -24,6 +25,6 @@ $('#scanButton').on('click', function () {
 });
 
 //backstretch background script
-$(function() {
-$.backstretch('https://pixabay.com/static/uploads/photo/2014/06/11/17/00/cook-366875_960_720.jpg');
+$(function () {
+    $.backstretch('https://pixabay.com/static/uploads/photo/2014/06/11/17/00/cook-366875_960_720.jpg');
 })

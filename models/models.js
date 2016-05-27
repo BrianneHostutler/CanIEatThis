@@ -20,12 +20,28 @@ var User = sequelizeConnection.define("users", {
     type: Sequelize.STRING,
   }
 },
-{
-	underscored: true
-});
+	{
+		underscored: true
+	});
+
+var Searches = sequelizeConnection.define("searches", {
+	user_search: {
+		type: Sequelize.STRING,
+	},
+  userID: {
+    type: Sequelize.INTEGER,
+  },
+	upcCode: {
+		type: Sequelize.INTEGER,
+	}
+},
+	{
+		underscored: true
+	});
 
 // Syncs with DB
 User.sync();
+Searches.sync();
 
 // Makes the User Model available for other files (will also create a table)
-module.exports = User;
+module.exports = [User, Searches];

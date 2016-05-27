@@ -9,3 +9,15 @@ CREATE TABLE users
 	password_hash varchar(255) NOT NULL,
 	PRIMARY KEY (id)
 );
+
+CREATE TABLE searches
+(
+user_search varchar(255),
+userID int(11),
+upcCode int(11),
+FOREIGN KEY fk_userID(userID)
+REFERENCES users(id)
+);
+
+
+
