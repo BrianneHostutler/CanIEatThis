@@ -82,10 +82,6 @@ video{
     text-decoration: none;
 }
 
-i {
-    margin-left: 200px;
-}
-
 form {
     width: 500px;
     margin: 50px auto;
@@ -130,6 +126,16 @@ form {
     background-color: gray;
     color: white;
     border: none;
+}
+span#appName{
+  color: #fed136;
+  font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
+  font-size:40px;
+}
+span#disclaimer{
+  color: red;
+  font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
+  font-size:40px;
 }
 footer {
     height: 50px;
