@@ -140,10 +140,10 @@ function runQuagga() {
 
         Quagga.onDetected(function (result) {
             var code = result.codeResult.code;
-            
+
             if (App.lastResult !== code) {
                 App.lastResult = code;
-                
+
                 $('#searchTextbox').val('');
                 $('#searchTextbox').val(code);
                 Quagga.stop();

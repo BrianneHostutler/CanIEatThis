@@ -14,7 +14,7 @@ var Sequelize = require("sequelize");
 // // Selects a connection (can be changed quickly as needed)
 // var selectedSource = source.localhost;
 
-
+// connect to the heroku ClearDB MySQL :: Database
 var sequelize = new Sequelize('mysql://sqab35ck62ifwvik:hd1f4kx2ggfcboi5@g8r9w9tmspbwmsyo.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/q0zal4epcqvhk5wz', {
   define: { timestamps: false },
   dialect: 'mysql',
