@@ -3,10 +3,11 @@
 
 <div class="container">
 
-  <form method="get" action="/searchResults">
+  <form method="get" action="/searchResults" >
     <h2 id="text">Enter a UPC code or scan one below.</h2>
     <input type="text" id="searchTextbox" name="upccode" placeholder=" Search..." required><br>
-    <input type="submit" name="name" value="Search" id="searchButton"><button id="scanButton">Scan UPC</button>
+    <input type="submit" name="name" value="Search" id="searchButton">
+    <button id="scanButton">Scan UPC</button>
     <!-- Display UPC scanning box here -->
     <div id="interactive" class="viewport"></div>
   </form>
