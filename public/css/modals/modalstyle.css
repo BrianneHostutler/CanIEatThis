@@ -43,7 +43,7 @@ Main components
 header[role=banner] {
   position: relative;
   height: 50px;
-  background: #343642;
+  background:#85D6CC;
 }
 header[role=banner] #cd-logo {
   float: left;
@@ -115,7 +115,6 @@ header[role=banner]::after {
   line-height: 50px;
   padding-left: 5%;
   background: #292a34;
-  border-top: 1px solid #3b3d4b;
   color: #FFF;
 }
 @media only screen and (min-width: 768px) {
@@ -157,13 +156,15 @@ header[role=banner]::after {
   }
   .main-nav a.cd-signin, .main-nav a.cd-signup {
     padding: .6em 1em;
-    border: 1px solid rgba(255, 255, 255, 0.6);
+
     border-radius: 50em;
     text-decoration: none;
+    background: gray;
   }
   .main-nav a.cd-signup {
-    background: #2f889a;
+    background: gray;
     border: none;
+
   }
 }
 

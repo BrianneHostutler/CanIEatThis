@@ -1,3 +1,6 @@
+$(document).ready(function(){
+   $("#interactive").hide();
+ });
 // Search button that pulls results from food essentials database
 $('#searchButton').on('click', function () {
     // var searched=true
@@ -19,12 +22,14 @@ $('#searchButton').on('click', function () {
 
 //Scan button that invokes Quagga scanner code
 $('#scanButton').on('click', function () {
+    $("#interactive").show();
     runQuagga();
     //populate form field once scanner picks up upc code
     //done inside live_w_locator.js
 });
 
-//backstretch background script
-$(function () {
-    $.backstretch('https://pixabay.com/static/uploads/photo/2014/06/11/17/00/cook-366875_960_720.jpg');
+// backstretch background script
+$(function() {
+$.backstretch('http://www.easyfreepatterns.com/patterns/0/black-background-wood-i-wallpaper-2560x1440-pixel-hd-769.jpg');
 })
+
