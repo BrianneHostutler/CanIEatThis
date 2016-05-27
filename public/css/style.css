@@ -4,7 +4,8 @@
     font-size: 22pt;
     margin-top: 17px;
     margin-left: 10px;
-    font-family: "PT Sans", sans-serif;
+    font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
+}
 }
 
 #header {
@@ -39,7 +40,9 @@ button {
 }
 #text{
   color: white;
-  font-family: "PT Sans", sans-serif;
+  font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-style: italic;
+  font-size: 20px;
 }
 
 #scanButton {
