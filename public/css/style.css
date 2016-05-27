@@ -137,6 +137,13 @@ span#disclaimer{
   font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
   font-size:40px;
 }
+section#aboutnav{
+    padding: 0px;
+    margin-bottom: 5px;
+}
+section#about{
+  margin-top: 10px;
+}
 footer {
     height: 50px;
     background-color: #343642;
@@ -146,7 +153,6 @@ footer {
     margin-top: -15px;
     width: 100%;
 }
-
 @media (max-width: 768px) {
     #logo {
         margin-top: 0px;
