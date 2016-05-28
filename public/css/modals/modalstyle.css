@@ -154,7 +154,7 @@ header[role=banner]::after {
     line-height: normal;
     background: transparent;
   }
-  .main-nav a.cd-signin, .main-nav a.cd-signup {
+  .main-nav a.cd-signin, .main-nav a.cd-signup, a.aboutus {
     padding: .6em 1em;
 
     border-radius: 50em;

@@ -121,7 +121,7 @@ form {
     text-align: center;
     padding: 40px;
 }
-#aboutus{
+.aboutus{
     border-radius: 25px;
     background-color: gray;
     color: white;
