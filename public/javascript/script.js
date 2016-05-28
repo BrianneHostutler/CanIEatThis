@@ -30,5 +30,5 @@ $('#scanButton').on('click', function () {
 
 // backstretch background script
 $(function() {
-$.backstretch('http://www.easyfreepatterns.com/patterns/0/black-background-wood-i-wallpaper-2560x1440-pixel-hd-769.jpg');
+$.backstretch('https://raw.githubusercontent.com/jahdasha/CanIEatThis/master/img-for-readme/background.png');
 })
