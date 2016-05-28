@@ -12,20 +12,20 @@
 
 * These are the npm packages I used and are needed to run the app
 
-  1. bcryptjs
-  2. body-parser
-  3. cookie-parser
-  4. express
-  5. express-handlebars
-  6. express-session
-  7. method-override
-  8. mysql
-  9. node-uuid
-  10. nodemon
-  11. request
-  12. sequelize
-  13. serve-favicon
-  14. session
+  1. [bcryptjs](https://www.npmjs.com/package/bcryptjs)
+  2. [body-parser](https://www.npmjs.com/package/body-parser)
+  3. [cookie-parser](https://www.npmjs.com/package/cookie-parser)
+  4. [express](https://www.npmjs.com/package/express)
+  5. [express-handlebars](https://www.npmjs.com/package/express-handlebars)
+  6. [express-session](https://www.npmjs.com/package/express-session)
+  7. [method-override](https://www.npmjs.com/package/method-override)
+  8. [mysql](https://www.npmjs.com/package/mysql)
+  9. [node-uuid](https://www.npmjs.com/package/node-uuid)
+  10. [nodemon](https://www.npmjs.com/package/nodemon)
+  11. [request](https://www.npmjs.com/package/request)
+  12. [sequelize](https://www.npmjs.com/package/sequelize)
+  13. [serve-favicon](https://www.npmjs.com/package/serve-favicon)
+  14. [session](https://www.npmjs.com/package/session)
 
 
 * to install the npm packages used in this app run the following command.
