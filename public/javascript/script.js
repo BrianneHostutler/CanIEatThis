@@ -1,12 +1,12 @@
- $(document).ready(function(){
+$(document).ready(function(){
    $("#interactive").hide();
  });
-
 // Search button that pulls results from food essentials database
 $('#searchButton').on('click', function () {
     // var searched=true
 
     var results = $('#searchTextbox').val();
+
     var queryURL = "/upc/" + results;
 
     $.ajax({
@@ -15,6 +15,7 @@ $('#searchButton').on('click', function () {
     })
         .done(function (response) {
             console.log(response);
+
             $("#searchResults").html(response);
         });
 });
@@ -31,3 +32,4 @@ $('#scanButton').on('click', function () {
 $(function() {
 $.backstretch('http://www.easyfreepatterns.com/patterns/0/black-background-wood-i-wallpaper-2560x1440-pixel-hd-769.jpg');
 })
+
