@@ -127,6 +127,9 @@ form {
     color: white;
     border: none;
 }
+section#about{
+  margin-top: 10px;
+}
 span#appName{
   color: #fed136;
   font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
@@ -137,6 +140,10 @@ span#disclaimer{
   font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
   font-size:40px;
 }
+section#aboutnav{
+    padding: 0px;
+
+}
 footer {
     height: 50px;
     background-color: #343642;
@@ -146,7 +153,6 @@ footer {
     margin-top: -15px;
     width: 100%;
 }
-
 @media (max-width: 768px) {
     #logo {
         margin-top: 0px;
