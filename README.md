@@ -56,4 +56,4 @@ npm install session
 **Disclaimer: This website is not a substitute for reading the packing on a product. Always read the ingredients and allergen information before eating. “Can I Eat This?” is not responsible for any reactions that may occur after eating a product that was searched on this website.**
 
 # Copyright
-Jahdasha Flagg (C) 2016. All Rights Reserved.
+Jahdasha Flagg, Jamie Lipschitz, Brianne Hostutler (C) 2016. All Rights Reserved.
