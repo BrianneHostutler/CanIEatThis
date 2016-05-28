@@ -43,7 +43,7 @@ Main components
 header[role=banner] {
   position: relative;
   height: 50px;
-  background:#85D6CC;
+  background:#;
 }
 header[role=banner] #cd-logo {
   float: left;
