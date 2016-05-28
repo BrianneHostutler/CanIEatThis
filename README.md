@@ -1,4 +1,4 @@
-# Can I Eat This?
+# Can I Eat This?   https://canieatthisapp.herokuapp.com/
 
 ### Introduction
 
@@ -10,8 +10,50 @@
 * Example of the UPC Scanner
 ![ScreenShot](img-for-readme/scanner.png "UPC Scanner")
 
+* These are the npm packages I used and are needed to run the app
+
+  1. bcryptjs
+  2. body-parser
+  3. cookie-parser
+  4. express
+  5. express-handlebars
+  6. express-session
+  7. method-override
+  8. mysql
+  9. node-uuid
+  10. nodemon
+  11. request
+  12. sequelize
+  13. serve-favicon
+  14. session
+
+
+* to install the npm packages used in this app run the following command.
+```
+npm install
+
+```
+
+* if that does not work run these commands one at a time.
+```
+npm install bcryptjs
+npm install body-parser
+npm install cookie-parser
+npm install express
+npm install express-handlebars
+npm install express-session
+npm install method-override
+npm install mysql
+npm install node-uuid
+npm install nodemon
+npm install request
+npm install sequelize
+npm install serve-favicon
+npm install session
+
+```
 
 **Disclaimer: This website is not a substitute for reading the packing on a product. Always read the ingredients and allergen information before eating. “Can I Eat This?” is not responsible for any reactions that may occur after eating a product that was searched on this website.**
 
-
-https://canieatthisapp.herokuapp.com/
+# Copyright
+Jahdasha Flagg (C) 2016. All Rights Reserved.
